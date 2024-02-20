@@ -2,10 +2,6 @@ import os
 import logging
 import numpy as np
 import pandas as pd
-import random
-import pickle
-
-import torch
 
 # Env
 from utils import *
@@ -18,6 +14,7 @@ from model_GAT import *
 ### 1. Initializes parser and device
 opt = parse_args()
 device = torch.device('cuda:0')
+# Changed this from 1 to 15
 num_splits = 1
 results = []
 
