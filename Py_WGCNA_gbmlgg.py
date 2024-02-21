@@ -26,7 +26,7 @@ geneExp = geneExp.astype(float)
 print(geneExp.iloc[0:,])
 
 # Calculate adjacency matrix.
-adjacency = PyWGCNA.WGCNA.adjacency(geneExp, power = wgcna_power, adjacencyType="signed hybrid"Py)
+adjacency = PyWGCNA.WGCNA.adjacency(geneExp, power = wgcna_power, adjacencyType="signed hybrid")
 print(adjacency)
 # Using adjacency matrix calculate the topological overlap matrix (TOM).
 # TOM = PyWGCNA.WGCNA.TOMsimilarity(adjacency)
